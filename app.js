@@ -3,8 +3,10 @@ const mongoose = require('mongoose');
 const saucesRoutes = require('./routes/sauces');
 const userRoutes = require('./routes/user');
 const path = require('path');
+require('dotenv').config();
 
-mongoose.connect('mongodb+srv://AdminPiiquante:PWP6OC@cluster0.d06t39z.mongodb.net/?retryWrites=true&w=majority',
+// Méthode pour se connecter à la base de données "Mongodb"
+mongoose.connect(process.env.mdbLog,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
@@ -18,9 +20,9 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
 });
-  
+
 app.use(express.json());
-  
+
 app.use('/api/sauces', saucesRoutes);
 app.use('/api/auth', userRoutes);
 app.use('/images', express.static(path.join(__dirname, 'images')));
