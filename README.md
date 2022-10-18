@@ -12,13 +12,13 @@ This is an API REST for a food review website. This API has been create with the
 ## Technologies
 ***
 A list of technologies used within the project:
-* [Technologie name](bcrypt): Version 5.0.1 
-* [Technologie name](dotenv): Version 16.0.3
-* [Technologie name](express): Version 4.18.1
-* [Technologie name](jsonwebtoken): Version 8.5.1
-* [Technologie name](mongoose): Version 6.6.4
-* [Technologie name](mongoose-unique-validator): Version 3.1.0
-* [Technologie name](multer): Version 1.4.5
+* [BCrypt]: Version 5.0.1 
+* [DotEnv]: Version 16.0.3
+* [Express]: Version 4.18.1
+* [JsonWebToken]: Version 8.5.1
+* [Mongoose]: Version 6.6.4
+* [Mongoose-Unique-Validator]: Version 3.1.0
+* [Multer]: Version 1.4.5
 
 ## Installation
 ***
