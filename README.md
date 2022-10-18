@@ -4,6 +4,7 @@
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
+4. [How to use](#Howtouse)
 
 ### General Info
 ***
@@ -24,11 +25,20 @@ A list of technologies used within the project:
 ***
 About the installation. 
 ```
+$ Create a account on https://www.mongodb.com 
+$ Create a cluster in your new account (Save your Id and Password)
+$ Connect your application to your cluster and copy the link
+$ In the "Backend" folder, create a .env file
+$ In the .env file, create a "mdbLog =" and paste the link of your Mongo cluster connection
+$ In the .env file, create a "tokenKey =" and choose a keystring
+
 $ git clone https://github.com/Nickosmos/Projet_06_Piiquante.git
 $ cd ../yourfolder/backend
 $ nodemon server
+```
+## How to use
+***
+About the API.
+```
 
-$ cd ../yourfolder/frontend
-$ npm install
-$ npm start
 ```
