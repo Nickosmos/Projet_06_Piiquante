@@ -40,5 +40,12 @@ $ nodemon server
 ***
 About the API.
 ```
-
+$ Route POST/Signup for create account
+$ Route POST/login for connect to account
+$ Route GET/sauces for read all sauces
+$ Route GET/sauces/id for read one sauce
+$ Route POST/sauces for create one sauce
+$ Route PUT/sauce/id for modify one sauce
+$ Route DELETE/sauce/id for delete one sauce
+$ Route POST/sauce/id/like for like/dislike one sauce
 ```
