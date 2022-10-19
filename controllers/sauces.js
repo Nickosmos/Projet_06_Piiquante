@@ -89,10 +89,10 @@ exports.likeSauce = (req, res, next) => {
                 }
             }else if(req.body.like == 0) {
                 if(sauce.usersLiked.includes(req.body.userId)) {
-                    sauce.likes += -1;
+                    sauce.likes -= 1;
                     sauce.usersLiked.remove(req.body.userId);
                 }else if(sauce.usersDisliked.includes(req.body.userId)) {
-                    sauce.dislikes += -1;
+                    sauce.dislikes -= 1;
                     sauce.usersDisliked.remove(req.body.userId);
                 }else {
                     res.status(400).json({ error});
